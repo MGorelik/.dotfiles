@@ -39,10 +39,11 @@ nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
 nmap j gj
 nmap k gk
-nmap ., :grep -Rin --exclude \*/migrations/\* --include \*.py 
-nmap .c :grep -Rin --include \*.coffee 
-nmap .h :grep -Rin --exclude \*/site-packages/\* --include \*.html 
-nmap .s :grep -Rin --include \*.scss 
+nmap ., :grep --exclude-dir={migrations,python2.7,site-packages} -Rin 
+nmap .p :grep --exclude-dir={migrations,python2.7} --include \*.py -Rin 
+nmap .c :grep --include \*.coffee -Rin 
+nmap .h :grep --exclude \*/site-packages/\* --include \*.html -Rin 
+nmap .s :grep --include \*.scss -Rin 
 cnoremap <C-a>  <Home>
 cnoremap <C-b>  <Left>
 cnoremap <C-f>  <Right>
