@@ -40,15 +40,15 @@ nmap \o :set paste!<CR>
 nmap j gj
 nmap k gk
 nmap ., :grep -Rins --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss 
-nmap .. :grep -Rins --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss <cword> .<CR>
+nmap .. :grep -Rns --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss <cword> .<CR>
 nmap .p :grep -Rins --exclude-dir={migrations,python2.7} --include \*.py 
-nmap .P :grep -Rins --exclude-dir={migrations,python2.7} --include \*.py <cword> .<CR>
+nmap .P :grep -Rns --exclude-dir={migrations,python2.7} --include \*.py <cword> .<CR>
 nmap .c :grep -Rins --include \*.coffee 
-nmap .C :grep -Rins --include \*.coffee <cword> .<CR>
+nmap .C :grep -Rns --include \*.coffee <cword> .<CR>
 nmap .h :grep -Rins --exclude-dir={site-packages} --include \*.html 
-nmap .H :grep -Rins --exclude-dir={site-packages} --include \*.html <cword> .<CR>
+nmap .H :grep -Rns --exclude-dir={site-packages} --include \*.html <cword> .<CR>
 nmap .s :grep -Rins --include \*.scss 
-nmap .S :grep -Rins --include \*.scss <cword> .<CR>
+nmap .S :grep -Rns --include \*.scss <cword> .<CR>
 cnoremap <C-a>  <Home>
 cnoremap <C-b>  <Left>
 cnoremap <C-f>  <Right>
