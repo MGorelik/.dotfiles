@@ -52,6 +52,7 @@ repos=(
   https://github.com/scrooloose/syntastic.git
   https://github.com/docunext/closetag.vim.git
   https://github.com/mtth/scratch.vim.git
+  https://github.com/Valloric/YouCompleteMe.git
 
   https://github.com/kchmck/vim-coffee-script.git
   https://github.com/elzr/vim-json.git
@@ -72,10 +73,6 @@ other=(
   'vim-l9/doc;https://bitbucket.org/ns9tks/vim-l9/raw/3bb534a720fa762aa01d2df2d5d41bd3c4122169/doc/l9.jax'
   'vim-l9/doc;https://bitbucket.org/ns9tks/vim-l9/raw/3bb534a720fa762aa01d2df2d5d41bd3c4122169/doc/l9.txt'
   'vim-l9/plugin;https://bitbucket.org/ns9tks/vim-l9/raw/3bb534a720fa762aa01d2df2d5d41bd3c4122169/plugin/l9.vim'
-  'vim-autocomplpop/autoload;https://bitbucket.org/ns9tks/vim-autocomplpop/raw/13fe3d8064647e2cdf07e12840108c3f917f5636/autoload/acp.vim'
-  'vim-autocomplpop/plugin;https://bitbucket.org/ns9tks/vim-autocomplpop/raw/13fe3d8064647e2cdf07e12840108c3f917f5636/plugin/acp.vim'
-  'vim-autocomplpop/doc;https://bitbucket.org/ns9tks/vim-autocomplpop/raw/13fe3d8064647e2cdf07e12840108c3f917f5636/doc/acp.txt'
-  'vim-autocomplpop/doc;https://bitbucket.org/ns9tks/vim-autocomplpop/raw/13fe3d8064647e2cdf07e12840108c3f917f5636/doc/acp.jax'
   'zenburn/colors;https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim'
   'wombat/colors;http://files.werx.dk/wombat.vim'
   'coffee/colors;https://raw.githubusercontent.com/duythinht/vim-coffee/master/colors/coffee.vim'
