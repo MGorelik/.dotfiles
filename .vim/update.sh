@@ -39,24 +39,38 @@ fi
 # don't work.
 repos=(
 
+  # Status bar
+  https://github.com/vim-airline/vim-airline
+
+  # File browser
+  https://github.com/scrooloose/nerdtree.git
+
+  # Fuzzy file search
+  https://github.com/ctrlpvim/ctrlp.vim.git
+  https://github.com/Valloric/YouCompleteMe.git
+
+  # Git in the gutter
+  https://github.com/airblade/vim-gitgutter.git
+
+  # Syntax checker
+  https://github.com/scrooloose/syntastic.git
+
+  # Language-specific plugins
+  https://github.com/kchmck/vim-coffee-script.git
+  https://github.com/elzr/vim-json.git
+  https://github.com/ap/vim-css-color.git
+  https://github.com/klen/python-mode.git
+  # The Pope of Tim
   https://github.com/tpope/vim-pathogen.git
   https://github.com/tpope/vim-abolish.git
   https://github.com/tpope/vim-surround.git
   https://github.com/tpope/vim-sensible.git
   https://github.com/tpope/vim-fugitive.git
-  https://github.com/vim-airline/vim-airline
+
+  # Not sure what these do
   https://github.com/scrooloose/nerdcommenter.git
-  https://github.com/scrooloose/nerdtree.git
-  https://github.com/ctrlpvim/ctrlp.vim.git
-  https://github.com/airblade/vim-gitgutter.git
-  https://github.com/scrooloose/syntastic.git
   https://github.com/docunext/closetag.vim.git
   https://github.com/mtth/scratch.vim.git
-  https://github.com/Valloric/YouCompleteMe.git
-
-  https://github.com/kchmck/vim-coffee-script.git
-  https://github.com/elzr/vim-json.git
-  https://github.com/ap/vim-css-color.git
   
   )
 
