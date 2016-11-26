@@ -47,6 +47,8 @@ repos=(
 
   # Fuzzy file search
   https://github.com/ctrlpvim/ctrlp.vim.git
+
+  # Autocomplete
   https://github.com/Valloric/YouCompleteMe.git
 
   # Git in the gutter
@@ -112,6 +114,9 @@ case "$1" in
       git clone -q $url $dest
       rm -rf $dest/.git
     done
+    cd $bundledir
+    git submodule update --init --recursive
+    cd $OLDPWD
     ;;
 
   # TARBALLS AND SINGLE FILES -------------------------------------------
