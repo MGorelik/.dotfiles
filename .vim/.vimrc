@@ -45,6 +45,9 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 
 " }}}
 
+" Python IDE {{{
+
+" python-mode
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
@@ -52,6 +55,8 @@ let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_builin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
+
+" }}}
 
 " }}}
 
@@ -172,16 +177,16 @@ nnoremap k gk
 
 " Grep Shortcuts {{{
 
-nnoremap `, :grep -Rins --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss 
-nnoremap `. :grep -Rns --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss <cword> .<CR>
-nnoremap `p :grep -Rins --exclude-dir={migrations,python1.7} --include \*.py 
-nnoremap `P :grep -Rns --exclude-dir={migrations,python1.7} --include \*.py <cword> .<CR>
-nnoremap `c :grep -Rins --include \*.coffee 
-nnoremap `C :grep -Rns --include \*.coffee <cword> .<CR>
-nnoremap `h :grep -Rins --exclude-dir={site-packages} --include \*.html 
-nnoremap `H :grep -Rns --exclude-dir={site-packages} --include \*.html <cword> .<CR>
-nnoremap `s :grep -Rins --include \*.scss 
-nnoremap `S :grep -Rns --include \*.scss <cword> .<CR>
+nnoremap \, :grep -Rins --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss 
+nnoremap \. :grep -Rns --exclude-dir={migrations,python2.7,site-packages} --include \*.py --include \*.html --include \*.coffee --include \*.scss <cword> .<CR>
+nnoremap \p :grep -Rins --exclude-dir={migrations,python1.7} --include \*.py 
+nnoremap \P :grep -Rns --exclude-dir={migrations,python1.7} --include \*.py <cword> .<CR>
+nnoremap \c :grep -Rins --include \*.coffee 
+nnoremap \C :grep -Rns --include \*.coffee <cword> .<CR>
+nnoremap \h :grep -Rins --exclude-dir={site-packages} --include \*.html 
+nnoremap \H :grep -Rns --exclude-dir={site-packages} --include \*.html <cword> .<CR>
+nnoremap \s :grep -Rins --include \*.scss 
+nnoremap \S :grep -Rns --include \*.scss <cword> .<CR>
 
 " }}}
 
@@ -198,7 +203,7 @@ cnoremap <Esc>d <S-right><Delete>
 cnoremap <C-g>  <C-c>
 
 " Clear search highlighting
-nnoremap <leader>q :nohlsearch<CR>
+nnoremap \q :nohlsearch<CR>
 
 nnoremap <C-e> :e#<CR>
 nnoremap <C-n> :bnext<CR>
@@ -223,7 +228,7 @@ noremap <silent> <C-j> :call <SID>swap_down()<CR>
 
 " Python support
 nnoremap <Leader>g :call RopeGotoDefinition()<CR>
-nnoremap <Leader> d Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c
+nnoremap <Leader> d Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Insert the current date
 nnoremap <F5> "=strftime("%m-%d-%Y")<CR>p
@@ -233,7 +238,7 @@ inoremap <F5> <C-R>=strftime("%m-%d-%Y")<CR>
 nnoremap <leader>, :tabedit $MYVIMRC<CR>
 
 " Saving the current file
-nnoremap <leader>s :s<CR>
+nnoremap <leader>s :w<CR>
 
 " Quitting the current file
 nnoremap <leader>q :q<CR>

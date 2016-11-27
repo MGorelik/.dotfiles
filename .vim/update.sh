@@ -116,6 +116,9 @@ case "$1" in
     done
     cd $bundledir
     git submodule update --init --recursive
+    # YouCompleteMe requires an additional step:
+    cd YouCompleteMe
+    ./install.py
     cd $OLDPWD
     ;;
 

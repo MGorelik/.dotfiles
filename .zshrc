@@ -103,6 +103,7 @@ alias test='python manage.py test seedinvest --settings=seedinvest.settings.loca
 alias mq=/usr/local/sbin/rabbitmq-server
 alias elasticsearch=/usr/local/bin/elasticsearch
 alias silocal="~/Workspace/scripts/start_local.sh iTerm2 liam"
+alias s='si && grunt prepare_statics'
 
 eval "$(hub alias -s)"
 
